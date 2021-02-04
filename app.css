@@ -1,0 +1,77 @@
+body{
+    font-family: 'Lexend Mega', sans-serif;
+    margin: 0;
+    background-color: #4A6FA5;
+    color: #DBE9EE;
+}
+
+header h2{
+    display: inline;
+}
+h2{
+    margin: 1em;
+    font-size: 2em;
+}
+
+header{
+    background-color: #264653;
+    color: #DBE9EE;
+    padding: 2em;
+}
+
+#profile{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+
+#photo{
+    margin: 30px;
+}
+
+#description{
+    justify-self: flex-end;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    font-size: 3em;
+    margin: 20px;
+}
+
+#photo img{
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.languages{
+    border: 1px solid orange;
+    
+    justify-content: center;
+}
+
+.languages ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+.languages ul li{
+    list-style: none;
+    flex: 0 0 30%;
+    padding: 0;
+}
+
+ul li img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.container{
+    max-width: 60%;
+    margin: 0 auto;
+}
