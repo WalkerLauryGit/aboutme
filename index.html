@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,53 @@
     <link rel="stylesheet" href="app.css">
     <title>About Me</title>
 </head>
+
 <body>
+
+    <!-- modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <form action="#">
+                <div class="form-inputs">
+                    <div class="single-inputs">
+                        <span>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+            </span>
+            <span>
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="text" name="phonenumber" id="number" placeholder="Phone Number">
+                </span>
+                    </div>
+                    <div class="text-areas">
+                        <label for="message">What would you like me to know?</label>
+                        <br>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end modal -->
     <header>
-        <h2>Walker Laury</h2>
-        <h2>About Me</h2>
+        <div class="name">
+            <h2>Walker Laury</h2>
+            <h2>About Me</h2>
+        </div>
+        <div class="icons">
+            <a href="#" id="envelope"><img src="/assets/mail.svg" alt="envelope" class="grow"></a>
+            <a href="https://github.com/WalkerLauryGit"><img src="/assets/github.svg" alt="github cat" class="grow"></a>
+            <a href="https://www.linkedin.com/in/walkerlaury/"><img src="/assets/linkedin-logo.svg" alt="linkedin badge"
+                    class="grow"></a>
+        </div>
+
     </header>
     <div class="container">
         <div id="profile">
             <div id="photo">
-                <img src="/assets/profilpic.jpg" alt="">
+                <img src="/assets/profilpic.jpg" alt="profile picture">
             </div>
             <div id="description">
                 <ul>
@@ -25,6 +64,15 @@
                     <li>MIS Graduate</li>
                 </ul>
             </div>
+        </div>
+        <div class="about">
+            <h2>How I got started with development?</h2>
+            <p>Technology has always been of great interest to me. Way back in the days of flash games, I learned how to
+                make a simple animation/game with actionscript. Ever since then I have been fascinated how people take
+                code and apply that to make games and solutions to problems/</p>
+            <h2>Why I want to be a developer?</h2>
+            <p>I want to be able to help solve problems, and with that comes continual learning, community engagement,
+                and networking.</p>
         </div>
         <div class="languages">
             <h2>Languages of Interest</h2>
@@ -38,6 +86,13 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                perfect</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
+
 </html>

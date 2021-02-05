@@ -1,8 +1,8 @@
 body{
     font-family: 'Lexend Mega', sans-serif;
     margin: 0;
-    background-color: #4A6FA5;
-    color: #DBE9EE;
+    background-color: #D3F3EE;
+    color: #4A6FA5;
 }
 
 header h2{
@@ -13,16 +13,62 @@ h2{
     font-size: 2em;
 }
 
+.about h2{
+    margin-left: 0;
+}
+
 header{
+    background-color: #264653;
+    color: #DBE9EE;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icons{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.icons img{
+    margin: 0 1.5em
+    
+}
+
+.icons{
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grow{
+   transition: all .2s ease-in-out; 
+}
+
+.grow:hover{
+    transform: scale(1.1);
+}
+
+footer{
     background-color: #264653;
     color: #DBE9EE;
     padding: 2em;
 }
 
+footer a {
+    color: #DBE9EE;
+}
+
+.icons img{
+    max-width: 100px;
+    width: 100px;
+}
+
 #profile{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid red;
+    
 }
 
 #photo{
@@ -40,6 +86,25 @@ ul{
 ul li{
     font-size: 3em;
     margin: 20px;
+
+}
+
+#description ul li{
+    transform-origin: 50% 100%;
+    animation-duration: 1s;
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71, .55, .62, 1.57);
+}
+
+@keyframes fadeAndScale{
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1,1);
+    }
 }
 
 #photo img{
@@ -48,8 +113,6 @@ ul li{
 }
 
 .languages{
-    border: 1px solid orange;
-    
     justify-content: center;
 }
 
@@ -74,4 +137,51 @@ ul li img{
 .container{
     max-width: 60%;
     margin: 0 auto;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+textarea{
+    width: 80%;
+}
+
+
+.single-inputs{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.text-areas{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    width: 80%;
+    font-size: 1.5em;
 }
