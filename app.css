@@ -66,8 +66,8 @@ footer a {
 }
 
 .icons img{
-    max-width: 100px;
-    width: 100px;
+    max-width: 50px;
+    width: 50px;
 }
 
 #profile{
@@ -193,3 +193,6 @@ button{
     font-size: 1.5em;
 }
 
+.name{
+    align-self: center;
+}
